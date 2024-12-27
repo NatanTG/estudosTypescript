@@ -13,5 +13,14 @@ function sumName(e: string, c: string): string{
     return e + c;
 }
 
-console.log(soma(a, b), sumName(e, c), e.toLowerCase() );
+function imparOrPar(numero: number) : string {
+    // if(numero %  2 == 0){
+    //     return "PAr"
+    // }else{
+    //     return "impar"
+    // }
 
+    return numero % 2 === 0 ?  "par" : "impar"
+}
+
+console.log(soma(a, b), sumName(e, c), imparOrPar(5));
